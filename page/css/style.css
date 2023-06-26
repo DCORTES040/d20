@@ -1111,7 +1111,7 @@ h4.sub-title {
 }
 
 .tank-main-banner .banner-view {
-    background: url(/d20/page/images/1.jpg) no-repeat right;
+    background: url(d20/page/images/1.jpg) no-repeat right;
     background-size: cover;
     min-height: 100vh;
     position: relative;
