@@ -63,24 +63,37 @@
 
 
                     <div class="contacts12-main col-lg-6">
-                        <form action="#" class="main-input">
+                        <form action="https://formsubmit.co/siterpgd20@gmail.com" method="POST" class="main-input">
+
                             <div class="top-inputs d-grid">
-                                <input type="text" placeholder="Nome/Apelido" required>
+                                <input name="Nome" placeholder="Nome Completo" maxlength="50" required>
                             </div>
                             <div class="top-inputs d-grid">
-                                <input type="date" placeholder="" required>
+                                <input name="Data_de_Nascimento" type="date" required>
                             </div>
                             <div class="top-inputs d-grid">
-                                <input type="text" placeholder="Telefone" required>
+                                <input id="tel" name="Telefone_de_contato" type="text" maxlength="15"
+                                    pattern="\(\d{2}\)\s*\d{5}-\d{4}" placeholder="Telefone de Contato" required />
                             </div>
                             <div class="top-inputs d-grid">
-                                <input type="text" placeholder="Frase Favorita" required>
+                                <input type="text" name="Frase Favorita" placeholder="Frase Favorita" required>
                             </div>
-                            <input type="email" placeholder="Email" required>
-                            <textarea placeholder="Observação" required></textarea>
+                            <div class="top-inputs d-grid">
+                                <input type="text" name="Nivel" placeholder="Qual Nivel Escolheu?" required>
+                            </div>
+                            <input name="e-mail" type="email" class="campos" placeholder="Digite seu e-mail"
+                                maxlength="35" required>
+                            <textarea placeholder="Observação" name="Observação" required></textarea>
                             <div class="text-right">
                                 <button type="submit" class="btn btn-theme2">Enviar</button>
                             </div>
+                            <!--Titulo da mensagem de email-->
+                            <input type="hidden" name="_subject" value="NOVO SOLICITAÇÃO! - CARTEIRINHA.">
+                            <!--Impede que o email vá para caixa de spam-->
+                            <input type="text" name="_honey" style="display:none">
+                            <!--Desabilita o catcha-->
+                            <input type="hidden" name="_ctcha" value="false">
+                            <input type="hidden" name="_next" value="https://rolld20.fun/index">
                         </form>
                     </div>
 
@@ -100,7 +113,7 @@
                                     <span class="fa fa-envelope" aria-hidden="true"></span>
                                 </div>
                                 <div class="cont-add-rgt">
-                                    <a href="#">
+                                    <a href="mailto:siterpgd20@gmail.com">
                                         <p class="contact-text-sub">siterpgd20@gmail.com</p>
                                     </a>
                                 </div>
@@ -111,7 +124,7 @@
                                 </div>
                                 <div class="cont-add-rgt">
                                     <a href="#">
-                                        <p class="contact-text-sub">+55 69 98480-1129</p>
+                                        <p class="contact-text-sub">+00 00 00000-0000</p>
                                     </a>
                                 </div>
                             </div>
@@ -120,8 +133,8 @@
                                     <span class="fa fa-google" aria-hidden="true"></span>
                                 </div>
                                 <div class="cont-add-rgt">
-                                    <a href="#">
-                                        <p class="contact-text-sub">https://d20siterpg.com</p>
+                                    <a href="https://rolld20.fun">
+                                        <p class="contact-text-sub">https://rolld20.fun</p>
                                     </a>
                                 </div>
                             </div>
@@ -139,11 +152,15 @@
         <div class="footer-29 text-center">
             <div class="container">
                 <div class="main-social-footer-29">
-                    <a href="#" class="facebook"><span class="fa fa-facebook"></span></a>
-                    <a href="#" class="twitter"><span class="fa fa-twitter"></span></a>
-                    <a href="#" class="instagram"><span class="fa fa-instagram"></span></a>
-                    <a href="#" class="google-plus"><span class="fa fa-google-plus"></span></a>
-                    <a href="#" class="linkedin"><span class="fa fa-gamepad"></span></a>
+                    <a href="" class="facebook"><span class="fa fa-facebook"></span></a>
+                    <a href="https://twitter.com/_Roll_D20?t=cyTSw7UQIWZR5lS4nO5iXw&s=09" class="twitter"><span
+                            class="fa fa-twitter"></span></a>
+                    <a href="https://www.instagram.com/rolld.20/" class="instagram"><span
+                            class="fa fa-instagram"></span></a>
+                    <a href="mailto:siterpgd20@gmail.com" class="google-plus"><span
+                            class="fa fa-google-plus"></span></a>
+                    <a href="https://discord.com/channels/@me/1037490528285106257/1123207220369297488"
+                        class="discord"><span class="fa-brands fa-discord"></span></a>
                 </div>
                 <div class="bottom-copies text-center">
                     <p class="copy-footer-29">Volte Sempre <a href="#"></a></p>
@@ -159,7 +176,7 @@
             };
 
             function scrollFunction() {
-                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
                     document.getElementById("movetop").style.display = "block";
                 } else {
                     document.getElementById("movetop").style.display = "none";
@@ -189,8 +206,7 @@
 
 
 
-
-
+    <script src="https://kit.fontawesome.com/a4acc31ac6.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
@@ -200,9 +216,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
-
-
-
 
 </body>
 
